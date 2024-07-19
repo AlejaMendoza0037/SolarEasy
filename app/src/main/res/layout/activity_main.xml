@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/paneles_solares_tecnologia_fotovoltaica"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/andika_new_basic"
+            android:text="SolarEase"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/latitude_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Latitud (grados decimales)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/longitude_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Longitud (grados decimales)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/area_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Area disponible para paneles"
+            android:inputType="number" />
+
+        <SeekBar
+            android:id="@+id/inclination_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="90"
+            android:progress="30" />
+
+        <TextView
+            android:id="@+id/inclination_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Inclinacion de los paneles :30"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="232dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="15dp"
+            android:text="CALCULAR PRODUCCION DE ENERGIA" />
+
+        <TextView
+            android:id="@+id/result_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
